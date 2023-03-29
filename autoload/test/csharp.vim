@@ -7,6 +7,8 @@ if (has('win32') || has('win64'))
     let shell = fnamemodify(&shell, ':t')
     if (shell ==? 'cmd.exe' || shell ==? 'powershell')
         let s:slash = '\'
+    else 
+        let s:slash = '/'
     endif
 else
     let s:slash = '/'
